@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Kenny's Farm</title>
+        <link rel="stylesheet" 
+            href="{{ url_for('static', filename='zombies.css') }}" 
+            />
+            <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet' />
+        <script src="{{ url_for('static', filename='zombies.js') }}" 
+                type="module">
+        </script>
+    </head>
+    <body>
+        <h1>Kenny's Farm</h1>
+        <p 
+            id="outcome">
+        </p>
+        <canvas width="1024" height="640">
+        </canvas>
+    </body>
+</html>

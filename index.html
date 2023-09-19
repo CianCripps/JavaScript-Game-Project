@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Kenny's Farm</title>
+        <link rel="stylesheet" 
+            href="{{ url_for('static', filename='zombies.css') }}" 
+            />
+        <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet' />
+    </head>
+    <body>
+        <h1>Welcome to Kenny's Farm</h1>
+        <p>
+            In Kenny's Farm you play as a simple farm man, Kenny Mcdonald.
+            Despite this his farm proves to be far from simple. Kenny has locked himself out of his barn
+            to be surprised by ghosts haunting him. Try and collect as many keys as you can before a ghost catches you!
+        </p>
+        <p>
+            Be sure to check everywhere in the farm for keys!
+        </p>
+        <h2>Controls</h2>
+        <ul> 
+            <li>Use the up arrow to move upwards</li>
+            <li>Use the down arrow to move downwards</li>
+            <li>Use the left arrow to move left</li>
+            <li>Use the right arrow to move right</li>
+        </ul>
+        <p>
+            <a href="{{ url_for('zombies') }}">PLAY</a>
+        </p>
+        <table>
+            {% for result in results %}
+                <tr>
+                    <th>
+                        Leader Board
+                    </th>
+                    <td>{{ result["score"] }}</td>
+                </tr>
+            {% endfor %} 
+        </table>
+    </body>
+    <footer>
+        Sound from Zapsplat.com
+    </footer>
+</html>

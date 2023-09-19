@@ -1,0 +1,43 @@
+canvas {
+    background-color: black;
+    display: block;
+    margin: 0.5em auto;
+}
+
+#outcome {
+    color: red;
+    text-align: center;
+    font-size: 4em;
+}
+
+#score {
+    color: black;
+    text-align: left;
+    font-size: 2em;
+}
+
+h1,h2,ul,li, a{
+    text-align: center;
+    color: black;
+    font-family: 'Creepster';
+    font-size: 2em;
+    list-style: none;
+}
+
+
+p {
+    text-align: center;
+    color: black;
+}
+
+html {
+    background-color: aquamarine;
+}
+
+footer {
+    text-align: center;
+}
+
+a{
+    color: white;
+}
